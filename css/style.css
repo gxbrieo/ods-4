@@ -115,3 +115,29 @@ header ul a:hover {
     color: #aeaeae;
     font-weight: lighter;
 }
+
+.info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info .text {
+    width: 50%;
+}
+
+.info .text h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Montserrat;
+}
+
+.info .text p {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.info img {
+    width: 50%;
+}
