@@ -103,7 +103,7 @@ header ul a:hover {
     background: #ffffff;
     margin: 0 auto;
     border-radius: 50px;
-    box-shadow: 0px 0px 8px #00000034;
+    box-shadow: 0px 0px 5px #00000041;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -160,4 +160,45 @@ header ul a:hover {
 
 .importancia div:nth-child(2) p b {
     text-decoration: underline;
+}
+
+.metas {
+    background-color: var(--primary-color);
+    color: #fff;
+
+    padding: 44px;
+    border-radius: 44px;
+}
+
+.top, .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.top div, .bottom div {
+    width: 45%;
+}
+
+.top {
+    margin-bottom: 40px;
+}
+
+.top div {
+    margin: auto 0;
+}
+
+.top div h2 {
+    font-size: 75px;
+}
+
+.top div p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.bottom div p {
+    margin: 20px 0px;
+    font-weight: bold;
 }
