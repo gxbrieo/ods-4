@@ -77,6 +77,8 @@ header ul a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url("../assets/hero.png");
+    background-blend-mode: multiply;
 }
 
 .hero .hero-cta h1 {
@@ -166,7 +168,7 @@ header ul a:hover {
     background-color: var(--primary-color);
     color: #fff;
 
-    padding: 44px;
+    padding: 20px 81px;
     border-radius: 44px;
 }
 
@@ -201,4 +203,46 @@ header ul a:hover {
 .bottom div p {
     margin: 20px 0px;
     font-weight: bold;
+}
+
+.mundo {
+    width: 100%;
+    padding: 100px 0;
+    height: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mundo div {
+    width: 45%;
+    overflow: hidden;
+}
+
+.mundo div h2 {
+    font-family: Montserrat;
+    font-size: 44px;
+    margin-bottom: 24px;
+}
+
+.mundo div p {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
+.mundo .card {
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary-color);
+    margin: 24px 0;
+    color: #fff;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.mundo .card b {
+    font-size: 85px;
+    font-family: Montserrat;
+    margin: 20px;
 }
