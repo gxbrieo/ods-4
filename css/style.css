@@ -28,6 +28,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 header {
@@ -92,11 +93,15 @@ header ul a:hover {
 }
 
 .metricas {
-    width: 1100px;
+    position: absolute;
+    max-width: 1100px;
+    top: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
     height: 200px;
     background: #ffffff;
     margin: 0 auto;
-    transform: translateY(-100px);
     border-radius: 50px;
     box-shadow: 0px 0px 8px #00000034;
     display: flex;
@@ -116,28 +121,43 @@ header ul a:hover {
     font-weight: lighter;
 }
 
-.info {
+.importancia {
     width: 100%;
+    height: 1080px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.info .text {
-    width: 50%;
+.importancia div{
+    width: 45%;
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.info .text h2 {
-    font-size: 40px;
-    font-weight: bolder;
+.importancia div h2 {
+    font-size: 44px;
     font-family: Montserrat;
+    margin-bottom: 40px;
 }
 
-.info .text p {
-    margin: 20px 0;
-    width: 100%;
-    font-size: 20px;
+.importancia div:nth-child(1) p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666666;
 }
 
-.info img {
-    width: 50%;
+.importancia div:nth-child(2) p {
+    color: #c72030;
+    font-size: 18px;
+    margin: 60px;
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+}
+
+.importancia div:nth-child(2) p b {
+    text-decoration: underline;
 }
