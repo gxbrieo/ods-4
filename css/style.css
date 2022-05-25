@@ -56,12 +56,11 @@ header ul a {
     color: #000;
     font-weight: lighter;
 
-    transition: 0.5s ease-in;
+    transition: 0.3s;
 }
 
 header ul a:hover {
-    border-bottom: 5px solid var(--primary-color);
-    font-weight: bolder;
+    color: var(--primary-color);
 }
 
 .hero {
@@ -92,6 +91,17 @@ header ul a:hover {
     margin: 10px 0px;
 
     font-size: 20px;
+}
+
+.hero button {
+    width: 200px;
+    background-color: #fff;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 24px;
 }
 
 .metricas {
@@ -205,12 +215,12 @@ header ul a:hover {
     font-weight: bold;
 }
 
-.mundo {
+.mundo, .brasil, .impactos {
     width: 100%;
     padding: 100px 0;
-    height: 1080px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .mundo div {
@@ -218,13 +228,13 @@ header ul a:hover {
     overflow: hidden;
 }
 
-.mundo div h2 {
+h2 {
     font-family: Montserrat;
     font-size: 44px;
     margin-bottom: 24px;
 }
 
-.mundo div p {
+.mundo div p, .brasil-info p, .impactos p {
     font-size: 18px;
     font-weight: lighter;
     margin: 10px 0;
@@ -245,4 +255,123 @@ header ul a:hover {
     font-size: 85px;
     font-family: Montserrat;
     margin: 20px;
+}
+
+footer {
+    width: 100%;
+
+    background-color: #c72030;
+
+    padding: 40px 15%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div img {
+    width: 100px;
+}
+
+
+footer div ul li{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+footer div ul a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+
+    outline: none;
+
+    transition: 400ms color;
+}
+
+footer div ul a:hover {
+    color: #000000;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.brasil {
+    align-items: center;
+}
+
+.brasil div {
+    position: relative;
+    max-width: 45%;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 22px;
+    padding: 25px 0;
+}
+
+.card-info {
+    background-color: #c72030;
+    width: 50%;
+    padding: 20px;
+}
+
+.card-info p {
+    font-weight: bold;
+    color: #fff;
+}
+
+.topicos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.topicos div{
+    width: 49%;
+}
+
+.impactos ul li {
+    margin-top: 58px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.topicos .img {
+    margin-top: 58px;
+    background-image: url("https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470");
+    background-position: 70%;
+    background-repeat: no-repeat;
+}
+
+.logo-footer {
+    animation: pulse 3s steps(60) infinite;
+}
+
+@keyframes pulse {
+    0% {
+        width: 250px;
+    }
+    50% {
+        width: 280px;
+    }
+    100% {
+        width: 250px;
+    }
 }
